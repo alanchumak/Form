@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+.myinput {
+   font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 100%;
+/* identical to box height, or 14px */
+
+letter-spacing: 0.25px;
+
+    background: #FFFFFF;
+    border: 2px solid #E3E3E3;
+    /* box-sizing: border-box; */
+    border-radius: 8px;
+
+    height: 50px;
+    padding: 18px 13px 19px;
+    width: 100%;
+
+    margin-top: 5px;
+}
+
+.myinput::placeholder{
+    color: #CDCAD0;
+}
+
+.mylabel {
+    font-family: 'SF UI Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    /* identical to box height, or 12px */
+    letter-spacing: 0.25px;
+    color: #828282; 
+
+    /****************/
+    padding: 0px 5px;
+
+    position: absolute;
+    top: 0px;
+    left: 10px;
+
+    /* position: relative;
+    top: -55px;
+    left: 10px; */
+
+    background: white;
+    /* display: inline-block; */
+    width: max-content;
+    box-sizing: border-box;
+    display: block;
+
+
+}
+
+.mydiv {
+    /* border: 1px solid black; */
+    position: relative;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+.myinput:focus {
+    outline-color: #0086A8;
+}
+
+.myinput:focus +.mylabel  {
+    color: #0086A8;
+}
+
+.myerror {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    color: #EB5E55;
+
+    margin-top: 8px;
+    margin-left: 15px;
+
+    display: none;
+}
+
+.error.active {
+  margin-top: 8px;
+  /* color: #EB5E55; */
+
+}
+
+.myinput:invalid {
+    /* outline-color: #EB5E55; 
+     outline-style: solid;
+   outline-width: 2px; */
+    border-color: #EB5E55;
+    border-radius: 9px;
+
+}
+
+.myinput:invalid +.mylabel  {
+    color: #EB5E55;
+}
+
+
+.dropdownControl {
+    display: flex;
+    justify-content: space-between;
+}
+
+.arrowOpen {
+    /* padding-bottom: 8px; */
+    border: 1px solid black;
+}
+
+
+
+.dropdownmenu {
+    background: #FFFFFF;
+    border: 2px solid #E3E3E3;
+    box-sizing: border-box;
+    box-shadow: 0px 5px 20px rgba(53, 50, 56, 0.14);
+    border-radius: 8px;
+}
+
+.labelDropdawn {
+    font-family: 'Open Sans'; /* в других метках был шрифт эппл*/
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    /* identical to box height, or 12px */
+    letter-spacing: 0.25px;
+    color: #0086A8;
+
+    /****************/
+    padding: 0px 5px;
+
+    position: absolute;
+    top: -5px;
+    left: 10px;
+
+/* position: absolute;
+    top: 0px;
+    left: 10px; */
+
+    /* position: relative;
+    top: -55px;
+    left: 10px; */
+
+    background: white;
+    /* display: inline-block; */
+    width: max-content;
+    box-sizing: border-box;
+    display: block;
+}
+
+
+
+.mybutton {
+    /* width: 156px; */
+    height: 50px;
+    background: #0086A8;
+    border-radius: 8px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+
+    color: #FFFFFF;
+
+    border: 0;
+    display: block;
+    width: 100%;
+}
+
+.mybutton:disabled {
+    background: #E3E3E3;
+    color: #828282;
+}
+
+.mybutton:enabled:hover {
+    background: #007693;
+}
+
+.mybutton:enabled:active {
+    background: #00657E;
+}
+
+.spiner1 {
+  border: 2px solid white;
+  border-radius: 50%;
+  border-right: 2px solid transparent;
+  width: 26px;
+  height: 26px;
+  margin-left: auto;
+    margin-right: auto;
+    animation: spiner2 2s linear infinite;
+  
+}
+
+@keyframes spiner2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.extraFieldsButton {
+    /* border: 1px solid black; */
+    cursor: pointer;
+    /* margin: 15px; */
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    /* identical to box height, or 21px */
+    color: #353238;
+    width: max-content;
+
+}
+
+.extraFieldsButton .arrow {
+    position: relative;
+    top: -2px;
+    padding-left: 8px;
+}
+
+
+
+
+.formRow {
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 1px solid black; */
+}
+
+.formRow .mydiv {
+    flex: 1 1 170px;
+}
+
+.formRow .mydiv:nth-of-type(odd) {
+  margin-right: 20px;
+}
+
+.formRow .mydiv:nth-of-type(-n+2) {
+  margin-bottom: 20px;
+}
+
+
+
+.myform{
+    margin: 15px;
+    width: 440px;
+    display: block;
+    /* display: flex;
+    flex-direction: column; */
+    /* align-items: flex-start; */
+
+    padding: 40px 30px;
+    background: #FFFFFF;
+    box-shadow: 0px 5px 20px rgba(53, 50, 56, 0.14);
+    border-radius: 8px;
+
+    /* display: flex; */
+  /* margin: 0 -20px; */
+  /* margin:  -20px 0; */
+}
+
+/* .myform > .mydiv, .formRow {  */
+.myform > .mydiv, section, section > .mydiv 
+{
+  margin-bottom: 20px;
+}

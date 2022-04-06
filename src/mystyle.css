@@ -1,0 +1,14 @@
+.layout {
+    display: flex;
+    margin: 100px 100px;
+    /* align-items: center; */
+}
+
+.textBox {
+    margin-right: 60px;
+    /* padding: 40px 0 40px; */
+}
+
+.myform{
+    min-width: 440px;
+};
