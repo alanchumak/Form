@@ -12,3 +12,4 @@
 ## Зависимости 
 
 styled-components
+react-select
