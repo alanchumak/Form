@@ -88,7 +88,7 @@ export const Form = () => {
                     <TextInput 
                         id='email' 
                         title='E-mail *' 
-                        placeholder="example@skdesign.ru" 
+                        placeholder="example@gmail.ru" 
                         isWrong={emailIsWrong} 
                     />
                     <TextInput 
